@@ -19,7 +19,7 @@ public class HelloActivity extends Activity
 
         webView = (WebView)findViewById(R.id.webView);
         webView.setBackgroundColor(Color.WHITE);
-
+        webView.clearCache(true);
         // The URL below has the following meta tag, which disables WebView scaling:
         // <meta name="viewport" content="target-densitydpi=device-dpi" />
         webView.loadUrl("http://codinghero.ws/public/webview.html");
